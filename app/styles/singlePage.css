@@ -1,0 +1,64 @@
+.post{
+    display: flex;
+    gap: 50px;
+}
+.post-image{
+    max-width: 40%;
+    height: 450px;
+}
+.post-image img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.post-content{
+    flex-grow: 1;
+}
+
+.post-content-header h1{
+    margin-bottom: 0;
+}
+
+.post .singleRecipie-info{
+    margin-bottom: 0;
+}
+
+.post-content{
+    max-width: 100%;
+}
+
+.post-content .content img{
+    max-width: 100%;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.post-controls{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    
+}
+
+
+@media screen and (max-width: 890px) {
+    .post{
+        flex-direction: column-reverse;
+    }
+
+    .post-image{
+        max-width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .post-controls{
+        justify-content: center;
+    }
+}
